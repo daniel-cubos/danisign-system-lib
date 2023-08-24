@@ -5,8 +5,8 @@ import styles from './Button.module.scss';
 export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   variant: 'normal' | 'rounded';
   colors: 'orange' | 'white' | 'orange__outline';
-  width: string;
-  height?: string;
+  width: number;
+  height?: number;
 };
 
 function Button({

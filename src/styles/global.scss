@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --bg-color: #f3f2f1;
   --gray-900: #222222;
   --orange-300: #fd8d3a;
   --orange-400: #fa7436;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-volkhov: 'Volkhov', serif;
 }
 
 * {
@@ -13,6 +17,7 @@
 
 @import './buttons';
 @import './form';
+@import './modal-dialog';
 
 html,
 body {

@@ -5,8 +5,8 @@ import styles from './InputText.module.scss';
 export type InputTextProps = HTMLAttributes<HTMLInputElement> & {
   labelText?: string;
   labelId?: string;
-  width: string;
-  height?: string;
+  width: number;
+  height?: number;
 };
 
 function Input({
