@@ -1,12 +1,19 @@
-import 'react-app-polyfill/ie11';
 import * as React from 'react';
+import 'react-app-polyfill/ie11';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import { Button } from '../.';
 
 const App = () => {
+  function handleClick() {
+    console.log('clicked');
+  }
   return (
     <div>
-      <Thing />
+      <h1>Button</h1>
+
+      <Button colors="orange" variant="normal" onClick={() => handleClick()}>
+        My Button
+      </Button>
     </div>
   );
 };

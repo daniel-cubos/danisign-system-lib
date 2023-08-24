@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -63,13 +63,22 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^3.28.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^8.2.6",
     "storybook": "^7.3.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.28",
+    "sass": "^1.66.1"
   }
 }
