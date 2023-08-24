@@ -1,5 +1,3 @@
-@import url('./_links.css');
-
 :root {
   --bg-color: #f3f2f1;
   --gray-900: #222222;
@@ -12,6 +10,9 @@
   padding: 0;
   margin: 0;
 }
+
+@import './buttons';
+@import './form';
 
 html,
 body {

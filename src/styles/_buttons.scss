@@ -1,0 +1,18 @@
+button {
+  border: none;
+  width: 100%;
+
+  color: #fff;
+  text-align: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

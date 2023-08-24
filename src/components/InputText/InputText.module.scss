@@ -1,0 +1,21 @@
+.container-input {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 16px;
+
+  label {
+    margin-bottom: 4px;
+
+    color: #2a224f;
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182%; /* 40.04px */
+  }
+
+  input {
+    width: 100%;
+  }
+}
