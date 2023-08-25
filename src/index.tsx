@@ -4,6 +4,9 @@ import ConfirmDialog, {
   ConfirmDialogProps,
 } from './components/ConfirmDialog/ConfirmDialog';
 import InputText, { InputTextProps } from './components/InputText/InputText';
+import NotificationDialog, {
+  NotificationDialogProps,
+} from './components/NotificationDialog/NotificationDialog';
 
 export {
   Button,
@@ -14,4 +17,6 @@ export {
   ConfirmDialogProps,
   InputText,
   InputTextProps,
+  NotificationDialog,
+  NotificationDialogProps,
 };
