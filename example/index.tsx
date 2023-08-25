@@ -1,7 +1,13 @@
 import * as React from 'react';
 import 'react-app-polyfill/ie11';
 import * as ReactDOM from 'react-dom';
-import { Button, InputText, Chip, ConfirmDialog } from '../.';
+import {
+  Button,
+  InputText,
+  Chip,
+  ConfirmDialog,
+  NotificationDialog,
+} from '../.';
 
 const App = () => {
   const [open, setOpen] = React.useState(false);
@@ -34,8 +40,20 @@ const App = () => {
         handleConfirm={handleConfirm}
         open={open}
         title="Excluir postagem"
-        image={'Image'}
       />
+
+      {open && (
+        <NotificationDialog
+          title="Quarto excluído!"
+          description="Caso você queira voltar a disponibilziar o quarto para reservas, por favor faça o cadastro do quarto novamente."
+          actionText="Voltar para o painel"
+          handleClose={() => {}}
+          type="success"
+          handleNextLocation={() =>
+            (window.location.href = 'https://google.com.br')
+          }
+        />
+      )}
 
       <InputText
         width={400}
