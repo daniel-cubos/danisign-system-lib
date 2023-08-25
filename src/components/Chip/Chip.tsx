@@ -14,7 +14,7 @@ function Chip({
   title,
   color = '#fa7436',
   type = 'filled',
-  textColor = '#fa7436',
+  textColor = 'white',
   width,
   ...params
 }: ChipProps) {
