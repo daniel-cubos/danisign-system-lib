@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import Button from '../Button/Button';
+import CautionIcon from '../CautionIcon/CautionIcon';
+import SuccessIcon from '../SuccessIcon/SuccessIcon';
 import styles from './ConfirmDialog.module.scss';
 
 export interface ConfirmDialogProps {
@@ -11,7 +13,7 @@ export interface ConfirmDialogProps {
   btnConfirmText: string;
   btnCancelText: string;
   open: boolean;
-  image: string;
+  type?: 'caution' | 'success';
 }
 
 function ConfirmDialog({
@@ -22,14 +24,16 @@ function ConfirmDialog({
   description,
   btnConfirmText,
   btnCancelText,
-  image,
+  type = 'caution',
 }: ConfirmDialogProps) {
   return (
     <>
       {open && (
         <div className={styles.container}>
           <div className={styles.dialog}>
-            <img src={image} alt="icon" height={200} width={200} />
+            <div style={{ height: '200px', width: '200px' }}>
+              {type === 'success' ? <SuccessIcon /> : <CautionIcon />}
+            </div>
 
             <strong>{title}</strong>
             <p>{description}</p>

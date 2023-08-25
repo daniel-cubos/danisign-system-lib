@@ -52,17 +52,15 @@
 
   div {
     display: flex;
-    justify-content: space-between;
     width: 100%;
 
-    margin-top: 24px;
+    &:first-of-type {
+      justify-content: center;
+    }
 
-    button {
-      width: 206px;
-
-      &:first-of-type {
-        width: 268px;
-      }
+    &:last-of-type {
+      justify-content: space-between;
+      margin-top: 24px;
     }
   }
 }
